@@ -12,16 +12,20 @@ body{
     background-size: 100% 100%;
     background-position:100%;
     background-repeat: no-repeat;
-    background-color: rgba(129, 19, 19, 0.4);
+    background-color: rgba(129, 19, 19, 0.2);
+    backdrop-filter: blur(3px);
+    height: 100%;
     background-blend-mode: overlay;
 }
 a{
     color: white;
-    text-decoration: none;
-    transition: 1s ease-in;   
+    text-decoration: none;  
+    transition: all 300ms  ease-in-out;
 }
 
 a:hover{
+    transition: all 300ms  ease-in-out;
+    font-size: 30px;
 }
 
 .navbar{
@@ -34,21 +38,41 @@ a:hover{
     font-size: 20px;
 }
 
-.about-content{
-    border: 2px solid white;
+.about-section{
     margin: 10% 0 0 15%;
-    color: rgba(196, 30, 27, 0.826);
+    color: rgba(207, 49, 21, 0.707);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     width: 30%;
-    transition: 1s ease-out;
+    animation: bgmove 4s infinite;
+}
+
+@keyframes bgmove {
+0%  {
+    background-color: rgba(0, 0, 255, 0.3);
+    border-radius: 20px;
+    padding:40px 40px;
+}
+100% {
+    background-color:rgba(255, 0, 0, 0.3);
+    border-radius: 20px;
+    padding:40px 40px;
+}    
 }
 
 header>h3{
     width: fit-content;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     font-size: 60px;
-    border: 2px solid;
+    text-decoration:underline;
+    text-shadow: 0px 0px 4px rgba(207, 49, 21, 0.707);
+}
+
+.about-text{
+    text-align:justify;
+    margin-top: 10px;
+    text-shadow: 0px 0px 4px rgba(207, 49, 21, 0.707);
+    font-size: 1.5em;
 }
