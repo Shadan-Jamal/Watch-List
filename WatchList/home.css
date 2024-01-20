@@ -98,9 +98,25 @@ header>h3{
 }
 
 img{
-    display: block;
     height: 70vh;
     position: absolute;
     top: -50px;
     right: 200px;
+    display: block;
+}
+
+img:last-child{ 
+    animation: img_swap 3s ease-in-out forwards;
+}
+
+@keyframes img_swap{
+    0%{
+        visibility: hidden;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
 }
