@@ -10,20 +10,21 @@ html{
 }
 body{
     background:url(/redbg.jpg);
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
-a{
+.items a{
     color: white;
     text-decoration: none;  
     transition: all 300ms  ease-in-out;
 }
 
-a:hover{
+.items a:hover{
     transition: all 150ms  ease-in;
     font-size: 32px;
 }
+
 
 .navbar-css{
     background: rgba(244, 54, 54, 0.33);
@@ -31,6 +32,11 @@ a:hover{
     width: 100%;
     border-radius: 0px 0px 50px 50px;
     transition: all 300ms ease-in;
+}
+
+#filter-bar{
+    background: rgba(244, 54, 54, 0.33) !important;
+
 }
 
 .items{
@@ -45,11 +51,8 @@ ul{
     font-size: 25px;
 }
 
-.form-control::placeholder{
+.form-control::placeholder,
+#filter-bar {
     color:white !important;
-    opacity:0.5 !important;
-}
-
-.img{
-
+    opacity:0.8 !important;
 }
