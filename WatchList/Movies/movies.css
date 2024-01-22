@@ -10,8 +10,9 @@ html{
 }
 body{
     background:url(/redbg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: fill;
+    background-repeat: repeat-y;
+    backdrop-filter: blur(4px);
 }
 
 .items a{
@@ -30,6 +31,7 @@ body{
     background: rgba(244, 54, 54, 0.33);
     height: 8vh;
     width: 100%;
+    border-bottom: 2px inset;
     border-radius: 0px 0px 50px 50px;
     transition: all 300ms ease-in;
 }
