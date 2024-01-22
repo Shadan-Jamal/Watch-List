@@ -9,9 +9,10 @@ html{
     font-family: 'Cabin', sans-serif;
 }
 body{
-    background-image: linear-gradient(to bottom, #295f85, #245d88, #215a8c, #21588f, #235591,
-     #23508f, #244c8d, #26478b, #234185, #1f3a7e, #1c3478, #192e71);
+    background-image: linear-gradient(to bottom, #0c414f, #004055,
+     #003e5c, #003b61, #003765, #043566, #0b3267, #132f68, #142e68, #152d69, #162c69, #172b69);
     background-size: 200% 200%;
+    backdrop-filter: opacity(8px);
 }
 
 .items a{
@@ -27,7 +28,7 @@ body{
 
 
 .navbar-css{
-    background: #17485895;
+    background: #40bce595;
     backdrop-filter: opacity(80%);
     height: 8vh;
     width: 100%;
@@ -37,7 +38,7 @@ body{
 }
 
 #filter-bar{
-    background: rgba(244, 54, 54, 0.33) !important;
+    background: rgba(24, 29, 135, 0.652) !important;
 
 }
 
@@ -56,9 +57,21 @@ ul{
 .form-control::placeholder,
 #filter-bar {
     color:white !important;
-    opacity:0.8 !important;
 }
 
 img{
-    visibility: hidden ;
+    border-radius: 10px;
+}
+
+#series-grid{
+    animation: expand 1s ease-in;
+}
+
+@keyframes expand {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
 }
