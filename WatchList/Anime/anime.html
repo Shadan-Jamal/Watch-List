@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="anime.css">
+    <script defer src="https://kit.fontawesome.com/957b64b331.js" crossorigin="anonymous"></script>
+    <title>Anime</title>
+</head>
+
+<body>
+    <!--Navbar DONE-->
+    <nav class="navbar-css bg-dark">
+        <ul class="items">
+        <li><a href="/home.html"><i class="fa-solid fa-house"></i></a></li>
+        <li><a href="/Movies/movies.html">Movies</a></li>
+        <li><a href="/Series/series.html">Series</a></li>
+        <li><a href="/Anime/anime.html">Anime</a></li>
+        <li><a href="/Games/games.html">Games</a></li>
+    </ul>
+    </nav>
+
+        <!--Search Bar still in progress-->
+    <div class="container-fluid mb-4 w-25 p-4" id="search-bar">
+            <form class="d-flex">
+
+            <input class="form-control me-2 bg-dark bg-gradient bg-opacity-25 text-white" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary  text-white" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button class="btn btn-secondary dropdown-toggle ms-2 bg-dark bg-gradient bg-opacity-25" type="button" data-bs-toggle="dropdown" aria-expanded="false" 
+            id="filter-bar">
+                Filter By Genre
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Drama</a></li>
+                <li><a class="dropdown-item" href="#">Comedy</a></li>
+              </ul>
+
+        </form>
+    </div>
+    
+    <!--Grid for series collection still in progress-->
+    <section class="container-fluid" id="series-grid">
+
+        <!--ROW 1-->
+        <div class="row d-flex justify-content-center align-items-center" id="row-1">
+
+            <div class="col-2">
+                <div class="container-fluid no-padding">
+                    <img src="/Anime/thumbnails/aot.jpg" class="img-fluid ms-3" alt="aot.jpeg">
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="container-fluid">
+                    <img src="/Anime/thumbnails/berserk.jpg" class="img w-100" alt="berserk.jpeg">
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="container-fluid">
+                    <img src="/Anime/thumbnails/castlevania.png" class="img w-100 " alt="castlevaniajpeg">
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="container-fluid">
+                    <img src="/Anime/thumbnails/code-geass.jpg" class="img w-100" alt="code-geass.jpeg">
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="container-fluid">
+                    <img src="/Anime/thumbnails/death-note.jpg" class="img ms-3 w-100" alt="death-note.jpeg">
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="container-fluid">
+                    <img src="/Anime/thumbnails/demon-slayer.jpg" class="img w-100" alt="demon-slayer.jpeg">
+                </div>
+            </div>
+        </div>
+
+        <!--ROW 2-->
+        <div class="row mt-4 d-flex justify-content-center align-items-center" id="row-2">
+
+            <div class="col-2">
+                <div class="container-fluid">
+                    <img src="/Anime/thumbnails/fmab.jpg" class="img w-100 pb-3" alt="fmab.jpeg">
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="container-fluid">
+                    <img src="/Anime/thumbnails/jjk.jpg" class="img w-100" alt="jjk.jpeg">
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="container-fluid">
+                    <img src="/Anime/thumbnails/mob-psycho.jpg" class="img w-100" alt="mob-psycho.jpeg">
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="container-fluid">
+                    <img src="/Anime/thumbnails/opm.jpg" class="img w-100" alt="opm.jpeg">
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="container-fluid">
+                    <img src="/Anime/thumbnails/parasyte.jpg" class="img w-100" alt="parasytejpeg">
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="container-fluid">
+                    <img src="/Anime/thumbnails/silent-voice.jpg" class="img w-100" alt="silent-voice.jpeg">
+                </div>
+            </div>
+
+        </div>
+        
+        <!--Row 3
+        <div class="row mt-4 d-flex justify-content-center align-items-center" id="row-3">
+
+            <div class="col-2">
+                <div class="container-fluid">
+                    <img src="/Series/thumbnails/daredevil.jpg" class="img w-100" alt="inside-llewyn-davis.jpeg">
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="container-fluid">
+                    <img src="/Series/thumbnails/dark.jpg" class="img w-100" alt="big-lebowski.jpeg">
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="container-fluid">
+                    <img src="/Series/thumbnails/grimm.jpg" class="img w-100" alt="inside-llewyn-davis.jpeg">
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="container-fluid">
+                    <img src="/Series/thumbnails/mindhunter.jpg" class="img w-100" alt="big-lebowski.jpeg">
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="container-fluid">
+                    <img src="/Series/thumbnails/parks-and-recreation.jpg" class="img w-100" alt="inside-llewyn-davis.jpeg">
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="container-fluid">
+                    <img src="/Series/thumbnails/the-office.jpg" class="img w-100" alt="big-lebowski.jpeg">
+                </div>
+            </div>
+
+
+        </div> -->
+        
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
