@@ -123,12 +123,12 @@ img:nth-child(2){
     top: -30px;
     right: 225px;
     border-radius: 50px;
+    transition:right 250ms linear;
 }
 
 img:nth-child(2):hover{
     cursor: pointer;
     right:4px;
-    transition:right 250ms linear;
 }
 
 img:nth-child(3){
@@ -138,12 +138,12 @@ img:nth-child(3){
     top: -30px;
     right: 250px;
     border-radius: 50px;
+    transition:right 250ms linear;
 }
 
 img:nth-child(3):hover{
     cursor: pointer;
     right:2px;
-    transition:right 250ms linear;
 }
 
 img:nth-child(4){
