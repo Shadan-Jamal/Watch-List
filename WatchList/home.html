@@ -46,7 +46,7 @@
         </div>
         
         <h2 id="slide-caption">
-            Hover
+            
         </h2>
 
         <footer>
@@ -69,6 +69,32 @@
         </footer>
     </section>
 
-    <script src="/home.js"></script>
+    <script>
+    const caption=document.getElementById('slide-caption');
+        const images=document.getElementsByClassName('img-slide')
+        console.log(images)
+        
+        for(let i=0;i<images.length;i++){
+        
+          images[i].addEventListener("mouseover", ()=>{
+            caption.innerText="";
+            if(i==0){
+              caption.append("Breaking Bad");
+              caption.style.transform="translateX(270px)";
+            }
+            else if(i==1){
+              caption.append("God Of War: Ragnarok");
+              caption.style.transform="translateX(240px)";
+            }
+            else if(i==2){
+              caption.append("Attack On Titan");
+              caption.style.transform="translateX(210px)";
+            }
+            else if(i==3){
+              caption.append("Schindler's List");
+              caption.style.transform="initial";
+            }
+          });
+        }</script>
 </body>
 </html>
