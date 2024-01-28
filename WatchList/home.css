@@ -101,11 +101,20 @@ header>h3{
     padding: 50px;
 }
 
+#slide-caption{
+    position: absolute;
+    text-align: center;
+    width: 30%;
+    bottom:-35px;
+    right: 260px;
+    font-size: 40px;
+}
+
 img:nth-child(1){
-    height: 65vh;
+    height: 70vh;
     width: 30%;
     position: absolute;
-    top: -30px;
+    top: -50px;
     right: 200px;
     border-radius: 50px;
     transition:right 250ms linear;
@@ -117,10 +126,10 @@ img:nth-child(1):hover{
 }
 
 img:nth-child(2){
-    height: 65vh;
+    height: 70vh;
     width: 30%;
     position: absolute;
-    top: -30px;
+    top: -50px;
     right: 225px;
     border-radius: 50px;
     transition:right 250ms linear;
@@ -129,13 +138,14 @@ img:nth-child(2){
 img:nth-child(2):hover{
     cursor: pointer;
     right:4px;
+    
 }
 
 img:nth-child(3){
-    height: 65vh;
+    height: 70vh;
     width: 30%;
     position: absolute;
-    top: -30px;
+    top: -50px;
     right: 250px;
     border-radius: 50px;
     transition:right 250ms linear;
@@ -147,10 +157,10 @@ img:nth-child(3):hover{
 }
 
 img:nth-child(4){
-    height: 65vh;
+    height: 70vh;
     width: 30%;
     position: absolute;
-    top: -30px;
+    top: -50px;
     right: 275px;
     border-radius: 50px;
 }
