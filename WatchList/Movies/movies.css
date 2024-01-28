@@ -26,7 +26,6 @@ body{
     font-size: 32px;
 }
 
-
 .navbar-css{
     background: rgba(244, 54, 54, 0.33);
     height: 8vh;
@@ -57,4 +56,42 @@ ul{
 #filter-bar {
     color:white !important;
     opacity:0.8 !important;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.container-fluid{
+    position: relative;
+}
+
+
+img{
+    border-radius: 10px;
+    transition: 250ms ease;
+}
+
+img:hover{
+    filter: blur(3px);
+    transition: 250ms ease;
+    z-index: 1;
+}
+
+#upper{
+    width: 70%;
+    color: black;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15%;
+    z-index: -1;
+    font-size: 20px;
+    font-weight: 500;
+    top: 30%;
+    transition: top 1s ease;
 }
