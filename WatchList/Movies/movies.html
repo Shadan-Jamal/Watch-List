@@ -7,7 +7,6 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="movies.css">
     <script defer src="https://kit.fontawesome.com/957b64b331.js" crossorigin="anonymous"></script>
-    <!--<script defer src="movies.js"></script>-->
     <title>Movies</title>
 </head>
 
@@ -23,14 +22,11 @@
     </ul>
     </nav>
 
-        <!--Search Bar still in progress-->
+        <!--Search Bar-->
     <div class="container-fluid mb-4 w-25 p-4" id="search-bar">
             <form class="d-flex">
 
-            <input class="form-control me-2 bg-danger bg-opacity-25 text-white" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-danger text-white" type="submit">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
+                <input id="search-bar" class="bg-danger bg-gradient bg-opacity-25 p-2 rounded border border-secondary" type="search" placeholder="Search">
 
             <button class="btn btn-secondary dropdown-toggle ms-2" type="button" data-bs-toggle="dropdown" aria-expanded="false" 
             id="filter-bar">
@@ -45,7 +41,7 @@
         </form>
     </div>
     
-    <!--Grid for movies collection still in progress-->
+    <!--Grid for movies collection-->
     <section class="container-fluid">
 
         <!--ROW 1-->
@@ -53,55 +49,55 @@
 
             <div class="col-2">
                 <div class="container-fluid no-padding">
-                    <div class="Genre" data-text="Drama">
+                    <div class="Genre" >
                         <p>Genre: Drama</p>
                     </div>
-                    <img src="/Movies/thumbnails/joker.jpg" class="img-fluid ms-3" alt="joker.jpeg">
+                    <img src="/Movies/thumbnails/joker.jpg" data-text="Joker" class="img-fluid ms-3" alt="joker.jpeg">
                 </div>
             </div>
 
             <div class="col-2">
                 <div class="container-fluid">
-                    <div class="Genre" data-text="Drama">
+                    <div class="Genre" >
                         <p>Genre: Drama</p>
                     </div>
-                    <img src="/Movies/thumbnails/s-list.jpg" class="img w-100" alt="Schindler's List.jpeg">
+                    <img src="/Movies/thumbnails/s-list.jpg" data-text="Schindler's List" class="img w-100" alt="Schindler's List.jpeg">
                 </div>
             </div>
 
             <div class="col-2">
                 <div class="container-fluid">
-                    <div class="Genre" data-text="Drama">
+                    <div class="Genre" >
                         <p>Genre: Drama</p>
                     </div>
-                    <img src="/Movies/thumbnails/boiling point.jpg" class="img w-100 " alt="boiling-point.jpeg">
+                    <img src="/Movies/thumbnails/boiling point.jpg" data-text="Boiling Point" class="img w-100 " alt="boiling-point.jpeg">
                 </div>
             </div>
 
             <div class="col-2">
                 <div class="container-fluid">
-                    <div class="Genre" data-text="Drama">
+                    <div class="Genre" >
                         <p>Genre: Drama</p>
                     </div>
-                    <img src="/Movies/thumbnails/whiplash.jpg" class="img w-100" alt="whiplash.jpeg">
+                    <img src="/Movies/thumbnails/whiplash.jpg" data-text="Whiplash" class="img w-100" alt="whiplash.jpeg">
                 </div>
             </div>
 
             <div class="col-2">
                 <div class="container-fluid">
-                    <div class="Genre" data-text="Drama">
+                    <div class="Genre" >
                         <p>Genre: Drama</p>
                     </div>
-                    <img src="/Movies/thumbnails/lunchbox.jpg" class="img ms-3 w-100" alt="lunchbox.jpeg">
+                    <img src="/Movies/thumbnails/lunchbox.jpg" data-text="The Lunchbox" class="img ms-3 w-100" alt="lunchbox.jpeg">
                 </div>
             </div>
 
             <div class="col-2">
                 <div class="container-fluid">
-                    <div class="Genre" data-text="Drama">
+                    <div class="Genre" >
                         <p>Genre: Drama</p>
                     </div>
-                    <img src="/Movies/thumbnails/oppenheimer.jpeg" class="img w-100" alt="oppenheimer.jpeg">
+                    <img src="/Movies/thumbnails/oppenheimer.jpeg" data-text="Oppenheimer" class="img w-100" alt="oppenheimer.jpeg">
                 </div>
             </div>
         </div>
@@ -111,55 +107,55 @@
 
             <div class="col-2">
                 <div class="container-fluid">
-                    <div class="Genre" data-text="Drama">
+                    <div class="Genre" >
                         <p>Genre: Drama</p>
                     </div>
-                    <img src="/Movies/thumbnails/inside-llewyn-davis.jpg" class="img w-100 pb-3" alt="inside-llewyn-davis.jpeg">
+                    <img src="/Movies/thumbnails/inside-llewyn-davis.jpg" data-text="Inisde Llewyn Davis" class="img w-100 pb-3" alt="inside-llewyn-davis.jpeg">
                 </div>
             </div>
 
             <div class="col-2">
                 <div class="container-fluid">
-                    <div class="Genre" data-text="Comedy">
+                    <div class="Genre" >
                         <p>Genre: Comedy</p>
                     </div>
-                    <img src="/Movies/thumbnails/big-lebowski.jpg" class="img w-100" alt="big-lebowski.jpeg">
+                    <img src="/Movies/thumbnails/big-lebowski.jpg"  data-text="The Big Lebowski" class="img w-100" alt="big-lebowski.jpeg">
                 </div>
             </div>
 
             <div class="col-2">
                 <div class="container-fluid">
-                    <div class="Genre" data-text="Horror">
+                    <div class="Genre" >
                         <p>Genre: Horror</p>
                     </div>
-                    <img src="/Movies/thumbnails/hereditary.jpg" class="img w-100" alt="hereditary.jpeg">
+                    <img src="/Movies/thumbnails/hereditary.jpg" data-text="Hereditary" class="img w-100" alt="hereditary.jpeg">
                 </div>
             </div>
 
             <div class="col-2">
                 <div class="container-fluid">
-                    <div class="Genre" data-text="Comedy">
+                    <div class="Genre" >
                         <p>Genre: Comedy</p>
                     </div>
-                    <img src="/Movies/thumbnails/holy-grail.jpg" class="img w-100" alt="holy-grail.jpeg">
+                    <img src="/Movies/thumbnails/holy-grail.jpg" data-text="Monty Python and the Holy Grail" class="img w-100" alt="holy-grail.jpeg">
                 </div>
             </div>
 
             <div class="col-2">
                 <div class="container-fluid">
-                    <div class="Genre" data-text="Drama">
+                    <div class="Genre" >
                         <p>Genre: Drama</p>
                     </div>
-                    <img src="/Movies/thumbnails/goodfellas.jpg" class="img w-100" alt="goodfellas.jpeg">
+                    <img src="/Movies/thumbnails/goodfellas.jpg" data-text="Goodfellas" class="img w-100" alt="goodfellas.jpeg">
                 </div>
             </div>
 
             <div class="col-2">
                 <div class="container-fluid">
-                    <div class="Genre" data-text="Comedy">
+                    <div class="Genre" >
                         <p>Genre: Comedy</p>
                     </div>
-                    <img src="/Movies/thumbnails/game-night.jpg" class="img w-100" alt="game-night.jpeg">
+                    <img src="/Movies/thumbnails/game-night.jpg" data-text="Game Night" class="img w-100" alt="game-night.jpeg">
                 </div>
             </div>
 
@@ -170,55 +166,55 @@
 
             <div class="col-2">
                 <div class="container-fluid">
-                    <div class="Genre" data-text="Sci-Fi">
+                    <div class="Genre" data->
                         <p>Genre: Sci-Fi</p>
                     </div>
-                    <img src="/Movies/thumbnails/district9.jpg" class="img w-100" alt="district9.jpeg">
+                    <img src="/Movies/thumbnails/district9.jpg" data-text="District 9" class="img w-100" alt="district9.jpeg">
                 </div>
             </div>
 
             <div class="col-2">
                 <div class="container-fluid">
-                    <div class="Genre" data-text="Drama">
+                    <div class="Genre" >
                         <p>Genre: Drama</p>
                     </div>
-                    <img src="/Movies/thumbnails/dead-poets-society.jpg" class="img w-100" alt="dead-poets-society.jpeg">
+                    <img src="/Movies/thumbnails/dead-poets-society.jpg"  data-text="Dead Poets' Society" class="img w-100" alt="dead-poets-society.jpeg">
                 </div>
             </div>
 
             <div class="col-2">
                 <div class="container-fluid">
-                    <div class="Genre" data-text="Sci-Fi">
+                    <div class="Genre" data->
                         <p>Genre: Sci-Fi</p>
                     </div>
-                    <img src="/Movies/thumbnails/coherence.jpg" class="img w-100" alt="coherence.jpeg">
+                    <img src="/Movies/thumbnails/coherence.jpg" data-text="Coherence" class="img w-100" alt="coherence.jpeg">
                 </div>
             </div>
 
             <div class="col-2">
                 <div class="container-fluid">
-                    <div class="Genre" data-text="Comedy">
+                    <div class="Genre" >
                         <p>Genre: Comedy</p>
                     </div>
-                    <img src="/Movies/thumbnails/being-john-malkovich.jpg" class="img w-100" alt="being-john-malkovich.jpeg">
+                    <img src="/Movies/thumbnails/being-john-malkovich.jpg" data-text="Being John Malkovich" class="img w-100" alt="being-john-malkovich.jpeg">
                 </div>
             </div>
 
             <div class="col-2">
                 <div class="container-fluid">
-                    <div class="Genre" data-text="Comedy">
+                    <div class="Genre" >
                         <p>Genre: Comedy</p>
                     </div>
-                    <img src="/Movies/thumbnails/airplane.jpg" class="img w-100" alt="airplane.jpeg">
+                    <img src="/Movies/thumbnails/airplane.jpg" data-text="Airplane" class="img w-100" alt="airplane.jpeg">
                 </div>
             </div>
 
             <div class="col-2">
                 <div class="container-fluid">
-                    <div class="Genre" data-text="Thriller">
+                    <div class="Genre" >
                         <p>Genre: Thriller</p>
                     </div>
-                    <img src="/Movies/thumbnails/10-cloverfield-lane.jpg" class="img w-100" alt="10-cloverfield-lane.jpeg">
+                    <img src="/Movies/thumbnails/10-cloverfield-lane.jpg" data-text="10 Cloverfield Lane" class="img w-100" alt="10-cloverfield-lane.jpeg">
                 </div>
             </div>
 
@@ -230,5 +226,35 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script>
+        const search_bar=document.querySelector('input[type="search"]')
+        const images=document.getElementsByTagName('img')
+        const caption=document.getElementsByTagName('p')
+
+        search_bar.addEventListener("keydown", (e)=>{
+            console.log(e.code)
+            if(e.code=="Enter"){
+                e.preventDefault();
+                for(let i=0;i<images.length;i++){
+                    if(e.target.value.length == 0){
+                        images[i].style.visibility="visible";
+                        caption[i].style.visibility="visible";
+                    }
+                    else if(e.target.value != images[i].dataset.text){
+                        console.log(e.target.value)
+                        images[i].style.visibility="hidden";
+                        caption[i].style.visibility="hidden";
+                    }
+                }
+            }
+            else if(e.code == "Backspace"){
+                for(let i=0;i<images.length;i++){
+                images[i].style.visibility="visible";
+                caption[i].style.visibility="visible";
+                }
+            }
+        })
+    </script>
 </body>
 </html>
