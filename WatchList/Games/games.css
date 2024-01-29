@@ -45,7 +45,7 @@ ul{
     font-size: 25px;
 }
 
-.form-control::placeholder,
+#search-bar::placeholder,
 #filter-bar {
     color:white !important;
     opacity: 0.4;
@@ -58,7 +58,7 @@ img{
 
 img:hover{
     opacity: 0.3;
-    filter: blur(4px);
+    filter: blur(8px);
     transition: 250ms ease;
 }
 
