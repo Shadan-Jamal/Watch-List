@@ -7,12 +7,12 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="series.css">
     <script defer src="https://kit.fontawesome.com/957b64b331.js" crossorigin="anonymous"></script>
-    <title>Movies</title>
+    <title>Series</title>
 </head>
 
 <body>
     <!--Navbar DONE-->
-    <nav class="navbar-css">
+    <nav class="navbar-css bg-dark bg-gradient bg-opacity-25">
         <ul class="items">
         <li><a href="/home.html"><i class="fa-solid fa-house"></i></a></li>
         <li><a href="/Movies/movies.html">Movies</a></li>
@@ -26,12 +26,12 @@
     <div class="container-fluid mb-4 w-25 p-4" id="search-bar">
             <form class="d-flex">
 
-            <input class="form-control me-2 bg-danger bg-opacity-25 text-white" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-danger text-white" type="submit">
+            <input class="form-control me-2 bg-dark bg-gradient bg-opacity-25 text-white" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary  text-white" type="submit">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
 
-            <button class="btn btn-secondary dropdown-toggle ms-2" type="button" data-bs-toggle="dropdown" aria-expanded="false" 
+            <button class="btn btn-secondary dropdown-toggle ms-2 bg-dark bg-gradient bg-opacity-25" type="button" data-bs-toggle="dropdown" aria-expanded="false" 
             id="filter-bar">
                 Filter By Genre
               </button>
@@ -51,37 +51,55 @@
         <div class="row d-flex justify-content-center align-items-center" id="row-1">
 
             <div class="col-2">
-                <div class="container-fluid no-padding">
-                    <img src="/Series/thumbnails/andor.jpg" class="img-fluid ms-3" alt="joker.jpeg">
+                <div class="container-fluid">
+                    <div class="Genre" data-text="Sci-Fi">
+                        <p>Genre: Sci-Fi</p>
+                    </div>
+                    <img src="/Series/thumbnails/andor.jpg" class="img-fluid ms-3" alt="andor.jpeg">
                 </div>
             </div>
 
             <div class="col-2">
                 <div class="container-fluid">
+                    <div class="Genre" data-text="Dark-Comedy">
+                        <p>Genre:<br>Dark-Comedy</p>
+                    </div>
                     <img src="/Series/thumbnails/barry.jpg" class="img w-100" alt="Schindler's List.jpeg">
                 </div>
             </div>
 
             <div class="col-2">
                 <div class="container-fluid">
+                    <div class="Genre" data-text="Drama">
+                        <p>Genre: Drama</p>
+                    </div>
                     <img src="/Series/thumbnails/bbposter.jpg" class="img w-100 " alt="boiling-point.jpeg">
                 </div>
             </div>
 
             <div class="col-2">
                 <div class="container-fluid">
+                    <div class="Genre" data-text="Drama">
+                        <p>Genre: Drama</p>
+                    </div>
                     <img src="/Series/thumbnails/better-call-saul.jpg" class="img w-100" alt="whiplash.jpeg">
                 </div>
             </div>
 
             <div class="col-2">
                 <div class="container-fluid">
+                    <div class="Genre" data-text="Sci-Fi">
+                        <p>Genre: Sci-Fi</p>
+                    </div>
                     <img src="/Series/thumbnails/black-mirror.jpg" class="img ms-3 w-100" alt="lunchbox.jpeg">
                 </div>
             </div>
 
             <div class="col-2">
                 <div class="container-fluid">
+                    <div class="Genre" data-text="Drama">
+                        <p>Genre: Drama</p>
+                    </div>
                     <img src="/Series/thumbnails/bojack-horseman.jpg" class="img w-100" alt="oppenheimer.jpeg">
                 </div>
             </div>
@@ -92,36 +110,54 @@
 
             <div class="col-2">
                 <div class="container-fluid">
+                    <div class="Genre" data-text="Horror">
+                        <p>Genre: Horror</p>
+                    </div>
                     <img src="/Series/thumbnails/midnight-mass.jpg" class="img w-100 pb-3" alt="inside-llewyn-davis.jpeg">
                 </div>
             </div>
 
             <div class="col-2">
                 <div class="container-fluid">
+                    <div class="Genre" data-text="Drama">
+                        <p>Genre: Drama</p>
+                    </div>
                     <img src="/Series/thumbnails/mr-robot.jpg" class="img w-100" alt="big-lebowski.jpeg">
                 </div>
             </div>
 
             <div class="col-2">
                 <div class="container-fluid">
+                    <div class="Genre" data-text="Drama">
+                        <p>Genre: Drama</p>
+                    </div>
                     <img src="/Series/thumbnails/ozark.jpg" class="img w-100" alt="inside-llewyn-davis.jpeg">
                 </div>
             </div>
 
             <div class="col-2">
                 <div class="container-fluid">
+                    <div class="Genre" data-text="Sci-Fi">
+                        <p>Genre: Sci-Fi</p>
+                    </div>
                     <img src="/Series/thumbnails/severance.jpg" class="img w-100" alt="big-lebowski.jpeg">
                 </div>
             </div>
 
             <div class="col-2">
                 <div class="container-fluid">
+                    <div class="Genre" data-text="Drama">
+                        <p>Genre: Drama</p>
+                    </div>
                     <img src="/Series/thumbnails/succession.jpg" class="img w-100" alt="inside-llewyn-davis.jpeg">
                 </div>
             </div>
 
             <div class="col-2">
                 <div class="container-fluid">
+                    <div class="Genre" data-text="Action">
+                        <p>Genre: Action</p>
+                    </div>
                     <img src="/Series/thumbnails/the-boys.jpg" class="img w-100" alt="big-lebowski.jpeg">
                 </div>
             </div>
@@ -133,36 +169,54 @@
 
             <div class="col-2">
                 <div class="container-fluid">
+                    <div class="Genre" data-text="Drama">
+                        <p>Genre: Drama</p>
+                    </div>
                     <img src="/Series/thumbnails/daredevil.jpg" class="img w-100" alt="inside-llewyn-davis.jpeg">
                 </div>
             </div>
 
             <div class="col-2">
                 <div class="container-fluid">
+                    <div class="Genre" data-text="Sci-Fi">
+                        <p>Genre: Sci-Fi</p>
+                    </div>
                     <img src="/Series/thumbnails/dark.jpg" class="img w-100" alt="big-lebowski.jpeg">
                 </div>
             </div>
 
             <div class="col-2">
                 <div class="container-fluid">
+                    <div class="Genre" data-text="Thriller">
+                        <p>Genre: Thriller</p>
+                    </div>
                     <img src="/Series/thumbnails/grimm.jpg" class="img w-100" alt="inside-llewyn-davis.jpeg">
                 </div>
             </div>
 
             <div class="col-2">
                 <div class="container-fluid">
+                    <div class="Genre" data-text="Drama">
+                        <p>Genre: Drama</p>
+                    </div>
                     <img src="/Series/thumbnails/mindhunter.jpg" class="img w-100" alt="big-lebowski.jpeg">
                 </div>
             </div>
 
             <div class="col-2">
                 <div class="container-fluid">
+                    <div class="Genre" data-text="Comedy">
+                        <p>Genre: Comedy</p>
+                    </div>
                     <img src="/Series/thumbnails/parks-and-recreation.jpg" class="img w-100" alt="inside-llewyn-davis.jpeg">
                 </div>
             </div>
 
             <div class="col-2">
                 <div class="container-fluid">
+                    <div class="Genre" data-text="Comedy">
+                        <p>Genre: Comedy</p>
+                    </div>
                     <img src="/Series/thumbnails/the-office.jpg" class="img w-100" alt="big-lebowski.jpeg">
                 </div>
             </div>
