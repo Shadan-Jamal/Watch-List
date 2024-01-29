@@ -55,7 +55,7 @@ ul{
 .form-control::placeholder,
 #filter-bar {
     color:white !important;
-    opacity:0.8 !important;
+    opacity:0.4 !important;
 }
 
 a{
@@ -72,26 +72,25 @@ a{
 img{
     border-radius: 10px;
     transition: 250ms ease;
+    position: relative;
 }
 
 img:hover{
-    filter: blur(3px);
+    opacity: 0.3;
+    filter: blur(4px);
     transition: 250ms ease;
-    z-index: 1;
 }
 
-#upper{
-    width: 70%;
-    color: black;
+.Genre{
+    width: 80%;
+    height: 100%;
+    color: rgb(226, 23, 23);
     position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-left: 15%;
-    z-index: -1;
-    font-size: 20px;
-    font-weight: 500;
-    top: 30%;
-    transition: top 1s ease;
+    margin-left:  10%;
+    font-size: 25px;
+    font-weight: 600;
 }
