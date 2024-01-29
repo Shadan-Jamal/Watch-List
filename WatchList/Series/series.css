@@ -68,7 +68,7 @@ img{
 
 img:hover{
     opacity: 0.3;
-    filter: blur(4px);
+    filter: blur(8px);
     transition: 250ms ease;
 }
 
