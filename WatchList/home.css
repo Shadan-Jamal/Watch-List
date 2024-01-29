@@ -1,28 +1,171 @@
-const caption=document.getElementById('slide-caption');
-const images=document.getElementsByClassName('img-slide')
-console.log(images)
-
-for(let i=0;i<images.length;i++){
-  console.log(i)
-  images[i].addEventListener("mouseover", slide(i));
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+html{
+    height: 100%;
+}
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Cabin', sans-serif;
+}
+body{
+    background: url(redbg.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
-function slide(index){
-    caption.innerText="";
-    if(index==0){
-      console.log(images[0])
-      caption.append("Breaking Bad");
+a{
+    color: white;
+    text-decoration: none;  
+    transition: all 300ms  ease-in-out;
+}
+
+nav a:hover{
+    transition: all 300ms  ease-in-out;
+    font-size: 32px;
+}
+
+footer a:hover{
+    font-size: 40px;
+}
+
+.navbar{
+    background: rgba(244, 54, 54, 0.33);
+    height: 8vh;
+    width: 100%;
+    border-radius: 0px 0px 50px 50px;
+    transition: all 300ms ease-in;
+}
+
+
+.items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+ul{
+    list-style-type: none;
+    font-size: 25px;
+}
+
+.about-section{
+    margin: 7% 0 0 15%;
+    color: rgba(207, 49, 21, 0.707);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    width:80vw;
+}
+
+
+header>h3{
+    width: fit-content;
+    letter-spacing: 4px;
+    font-size: 60px;
+    text-decoration:underline;
+    text-shadow: 0px 0px 8px rgba(207, 49, 21,0.707);
+}
+
+#about-text{
+    text-align:justify;
+    margin-top: 10px;
+    text-shadow: 0px 0px 4px rgba(207, 49, 21, 0.707);
+    font-size: 2em;
+    max-width: 40%;
+}
+
+.about-content,header,footer{
+    animation: bgmove 1s ease-out;
+}
+
+@keyframes bgmove {
+    0%  {
+        transform: translateX(-999px) ;
     }
-    else if(index==1){
-      console.log(images[1])
-      caption.append("God Of War: Ragnarok");
-    }
-    else if(index==2){
-      console.log(images[2])
-      caption.append("Attack On Titan");
-    }
-    else if(index==3){
-      console.log(images[3])
-      caption.append("Schindler's List");
-    }
+}
+#about-text::after{
+    content: "Thank You!!";
+    text-shadow: 0px 0px 4px rgba(207, 49, 21, 0.707);
+    font-size: 1em;
+    float: right;
+    text-align: center;
+    width: 100%;
+}
+
+.about-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.images{
+    padding: 50px;
+}
+
+#slide-caption{
+    position: absolute;
+    text-align: center;
+    width: 40%;
+    bottom:-20px;
+    right: 200px;
+    font-size: 40px;
+    transition: all 1s ease-in-out;
+}
+
+img:nth-child(1){
+    height: 70vh;
+    width: 30%;
+    position: absolute;
+    top: -65px;
+    right: 200px;
+    border-radius: 50px;
+    transition:right 250ms linear;
+}
+
+img:nth-child(1):hover{
+    cursor: pointer;
+    right:5px;
+}
+
+img:nth-child(2){
+    height: 70vh;
+    width: 30%;
+    position: absolute;
+    top: -65px;
+    right: 225px;
+    border-radius: 50px;
+    transition:right 250ms linear;
+}
+
+img:nth-child(2):hover{
+    cursor: pointer;
+    right:4px;
+    
+}
+
+img:nth-child(3){
+    height: 70vh;
+    width: 30%;
+    position: absolute;
+    top: -65px;
+    right: 250px;
+    border-radius: 50px;
+    transition:right 250ms linear;
+}
+
+img:nth-child(3):hover{
+    cursor: pointer;
+    right:2px;
+}
+
+img:nth-child(4){
+    height: 70vh;
+    width: 30%;
+    position: absolute;
+    top: -65px;
+    right: 275px;
+    border-radius: 50px;
 }
